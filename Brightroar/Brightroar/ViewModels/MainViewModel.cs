@@ -1,12 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Caliburn.Micro;
 
 namespace Brightroar.ViewModels
 {
-    public class MainViewModel
+    public class MainViewModel : PropertyChangedBase
     {
+        private string _message;
+
+        public string Message
+        {
+            get { return _message; }
+            set
+            {
+                _message = value;
+                NotifyOfPropertyChange(() => Message);
+            }
+        }
+
+        public MainViewModel()
+        {
+            Message = "Hello World";
+        }
     }
 }
