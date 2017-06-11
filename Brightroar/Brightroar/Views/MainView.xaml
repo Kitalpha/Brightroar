@@ -8,6 +8,9 @@
       d:DesignHeight="300" d:DesignWidth="300">
 
     <Grid>
+        <Button x:Name="ChangeMessage"
+                Content="Press Me"
+                VerticalAlignment="Top" />
         <TextBlock x:Name="Message"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center" />
