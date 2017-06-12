@@ -15,7 +15,6 @@ namespace Brightroar.ViewModels
                 NotifyOfPropertyChange(() => Message);
             }
         }
-
         private int _pressCount;
 
         public MainViewModel()
@@ -24,9 +23,9 @@ namespace Brightroar.ViewModels
             _pressCount = 0;
         }
 
-        public void ChangeMessage()
+        public void ChangeMessage(int incrementBy)
         {
-            _pressCount++;
+            _pressCount += incrementBy;
 
             Message = "Presses = " + _pressCount;
         }

@@ -14,7 +14,9 @@
                 VerticalAlignment="Top">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
-                    <cal:ActionMessage MethodName="ChangeMessage" />
+                    <cal:ActionMessage MethodName="ChangeMessage">
+                        <cal:Parameter Value="2"></cal:Parameter>
+                    </cal:ActionMessage>
                 </i:EventTrigger>
             </i:Interaction.Triggers>
             
